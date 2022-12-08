@@ -1,0 +1,22 @@
+.message{
+    background-color: rgba(176,161,113,255);
+    width: 100%;
+    height: 9vh;
+    text-align: center;
+}
+.messageText {
+    float: left;
+    width: 100%;
+}
+
+.message .messageText h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
