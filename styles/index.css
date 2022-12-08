@@ -66,3 +66,10 @@ body {
     padding-left: 1vw;
     padding-right: 1vw;
 }
+
+#footerText {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    padding-bottom: 3vh;
+    color: rgb(176, 164, 127);
+}
