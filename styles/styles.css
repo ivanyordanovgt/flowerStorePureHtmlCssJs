@@ -46,3 +46,19 @@ nav {
     float: right;
     margin-right: 10vw;
 }
+
+.footer {
+    background-color: black;
+    height: 10vh;
+    color: indianred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1vh;
+    margin-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+.footer h1 {
+    width: 40%;
+    font-size: 1.6vw;
+    margin-left: 30vw;
+}
