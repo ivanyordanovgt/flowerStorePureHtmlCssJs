@@ -1,3 +1,118 @@
 #contact {
     color: red;
 }
+
+body {
+    background-image: url('../images/rushPage/background.jpg');
+}
+
+.image {
+    float: right;
+    width: 30%;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+.image img {
+    width: 120%;
+    height: 90vh;
+}
+
+.sideBar {
+    margin-top: 10vh;
+}
+
+
+.sideBar form {
+    margin-left: 7vw;
+    margin-top: 5vh;
+    }
+    
+.sideBar form h1 {
+    color: rgb(7, 4, 4);
+    font-size: calc(1em + 1vw);
+    }
+    
+.sideBar input, label {
+    display: block;
+    }
+
+.sideBar label {
+    color: rgb(104, 2, 2);
+    font-weight: 900;
+    font-size: calc(.43em + .43vw);
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+    }
+
+form input {
+    border: none;
+    background-color: transparent;
+    font-size: calc(.7em + .7vw);
+    color: rgb(1, 0, 0);
+    padding-bottom: 1.5vh;
+    border-bottom: 1px solid rgba(74, 73, 73, 0.34);
+    width: 80%;
+    }
+    
+form textarea {
+    background-color: transparent;
+    width: 80%;
+    height: 14vh;
+    font-size: calc(.7em + .7vw);
+    border: none;
+    border-bottom: 1px solid rgba(74, 73, 73, 0.34);
+    color: rgb(0, 0, 0);
+    }
+    
+form textarea::placeholder {
+    color: rgb(0, 0, 0);
+    }
+    
+form textarea:focus, input:focus{
+        outline: none;
+    }
+    
+form input::placeholder {
+    color: rgb(0, 0, 0);
+    
+    }
+
+.nameEmail {
+    height: 8vh;
+    width: 90%;
+    padding-bottom: 5vh;
+    }
+    
+.nameEmail input {
+width: 15vw;
+margin-right: 5vw;
+
+}
+
+.nameEmail .name {
+    float: left;
+    }
+    
+.nameEmail .email {
+    float: right;
+    width: 40%;
+}
+
+    
+    
+form button {
+    background-color: transparent;
+    color: rgb(137, 0, 0);
+    font-weight: 900;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: calc(.7em + .7vw);
+    margin-top: 4vh;
+}
+
+.sideBar {
+    width: 55%;
+    float: left;
+    margin-right: 10vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
