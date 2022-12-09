@@ -9,6 +9,72 @@
     <link rel="stylesheet"  href="../styles/styles.css">
 </head>
 <body>
-    
+    <div class="message">
+        <div class="messageText">
+            <h1>Можем да доставим вашите ПОДАРЪЦИ навсякъде из България. Пазарувайте най-новата колекция, проверете тук.</h1>
+        </div>
+    </div>
+
+    <nav>
+        <div class="links">   
+            <a href="#" id="home">Home</a>
+            <a href="#" id="giftsRush">Gifts in rush</a>
+            <a href="#" id="sale">Sale</a>
+            <a href="./services.html" id="services">Services</a>
+            <a href="#" id="aboutUs">About Us</a>
+            <a href="#" id="contactUs">Contact us</a></div>
+    </nav>
+
+    <div class="products" id="products">
+       <!-- JS WILL ADD ALL ITEMS HERE  -->
+    </div>
+
 </body>
+
+
+<script> 
+ 
+    const productsDiv = document.getElementById('products');
+
+    const titles = [`Продукт 1`, `Продукт 2`, `Продукт 3`, 
+                    `Продукт 4`, `Продукт 5`, `Продукт 6`,
+                    `Продукт 7`, `Продукт 8`, `Продукт 9`]
+
+    for (let i=1; i<titles.length; i++) {
+        createProductDiv(
+        `../images/rushPage/product${i}.jpg`,
+        `../images/rushPage/product${i}Hover.jpg`,
+        titles[i],
+        `${Math.floor(Math.random() * 101) + 15}$`,
+        )
+    
+    }
+    
+    function createProductDiv(imageSrc, imageHover, productTitle, productPrice) {
+        let div = document.createElement('div');
+        console.log('here')
+        let image = document.createElement('img');
+        let title = document.createElement('h1');
+        let price = document.createElement('h2');
+
+        div.appendChild(image)
+        div.appendChild(title)
+        div.appendChild(price)
+
+        image.src = imageSrc
+        title.textContent = productTitle
+        price.textContent = productPrice
+        div.className = 'product';
+
+        div.addEventListener('mouseover', () => {
+            image.src = imageHover
+        })
+        div.addEventListener('mouseout', () => {
+            image.src = imageSrc
+        })
+        console.log(div)
+        productsDiv.appendChild(div)
+
+    };
+</script>
 </html>
